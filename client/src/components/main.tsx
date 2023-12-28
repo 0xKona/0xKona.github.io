@@ -1,36 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import Kona from "../assets/kona.png"
+import Header from "./header";
 
 const MainWrapper = styled.div`
     width: 100%;
     height: 100%;
-    // background-color: cyan;
 `
 const HeaderWrapper = styled.div`
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
     display: flex;
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: grey;
-
-`
-const NavBar = styled.ul`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    background-color: green;
-    width: 100%;
-
 `
 const LandingWrapper = styled.div`
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     height: fit-content;
     // background-color: blue;
     margin: 50px 10% 0px 10%;
@@ -59,11 +48,7 @@ const Main = () => {
     return(
     <MainWrapper>
         <HeaderWrapper>
-            <NavBar>
-                <li>Portfolio</li>
-                <li>GitHub</li>
-                <li>About Me</li>
-            </NavBar>
+            <Header/>
         </HeaderWrapper>
         <LandingWrapper>
             <LandingMain>
