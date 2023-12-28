@@ -7,15 +7,6 @@ const MainWrapper = styled.div`
     width: 100%;
     height: 100%;
 `
-const HeaderWrapper = styled.div`
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-`
 const LandingWrapper = styled.div`
     display: flex;
     justify-content: center;
@@ -46,10 +37,6 @@ const KonaImg = styled.img`
 
 const Main = () => {
     return(
-    <MainWrapper>
-        <HeaderWrapper>
-            <Header/>
-        </HeaderWrapper>
         <LandingWrapper>
             <LandingMain>
                 <IntroContainer>
@@ -61,7 +48,6 @@ const Main = () => {
                 <KonaImg src={Kona}/>
             </LandingMain>
         </LandingWrapper>
-    </MainWrapper>
     )
 }
 
