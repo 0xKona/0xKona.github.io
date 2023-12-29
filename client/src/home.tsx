@@ -4,7 +4,7 @@ import Header from "./components/header";
 import Main from "./components/main";
 
 const HomeBody = styled.body`
-
+    width: 100%;
 `
 
 const HeaderWrapper = styled.div`
