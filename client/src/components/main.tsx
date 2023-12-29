@@ -7,9 +7,9 @@ const LandingWrapper = styled.div`
     justify-content: center;
     align-items: center;
     height: fit-content;
-    background-color: blue;
     margin: 50px 10% 0px 10%;
     padding: 0px 5vw;
+    min-width: 550px;
 `
 const LandingMain = styled.div`
     margin: 0px 20px;
@@ -24,8 +24,6 @@ const IntroContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
-    background-color: pink;
     grid-area: IntroContainer;
     padding-left: 5%;
 `
@@ -40,7 +38,7 @@ const Description = styled.h2`
     color: #1d2327;
 `
 const Buttons = styled.div`
-    
+    min-width: 380px;
 `
 const ButtonMain = styled.button`
     height: 50px;
@@ -64,7 +62,8 @@ const ButtonSecondary = styled(ButtonMain)`
 const KonaImg = styled.img`
     aspect-ratio: 1 / 1;
     width: 100%;
-    background-color: orange;
+    min-height: 125px;
+    min-width: 125px;
     grid-area: KonaImg
 `
 
