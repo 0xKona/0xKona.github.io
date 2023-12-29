@@ -76,7 +76,7 @@ const Main = () => {
                     <Description>Front-end React Developer</Description>
                     <Buttons>
                         <ButtonMain>Portfolio</ButtonMain>
-                        <ButtonSecondary>Github</ButtonSecondary>
+                        <ButtonSecondary onClick={() => window.open('https://github.com/0xKona', '_blank', 'noopener')}>Github</ButtonSecondary>
                     </Buttons>
                 </IntroContainer>
                 <KonaImg src={Kona}/>
