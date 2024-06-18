@@ -6,6 +6,13 @@ const Container = styled.div`
     justify-content: space-evenly;
     padding: 10px;
 `
+const PageButton = styled.div`
+    cursor: pointer;
+    padding: 10px;
+    &:hover {
+        background-color: darkgrey
+    }
+`
 
 const PageSelector = ({setCurrentPage}: any) => {
 
@@ -18,9 +25,9 @@ const PageSelector = ({setCurrentPage}: any) => {
     return (
         <Container>
             {pages.map((page: string) => (
-                <div onClick={() => setPage(page)}>
+                <PageButton onClick={() => setPage(page)}>
                     <h2>{page}</h2>
-                </div>
+                </PageButton>
             ))}
         </Container>
     )
